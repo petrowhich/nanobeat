@@ -19,7 +19,7 @@ const int drumPattern[] = {
 const size_t drumPatternLength = arrayLength(drumPattern);
 const int estimatedTime = 35;
 const float noteDelayMs = 60000.0 / float(BPM * 2) - estimatedTime;
-#define drumHit tone(SPK_PIN, 2000, estimatedTime)
+#define drumHit tone(SPK_PIN, 125, estimatedTime)
 #define skipHit delay(estimatedTime)
 
 /*
