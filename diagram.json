@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "author": "petrowhich",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-nano", "id": "nano", "top": -43.2, "left": -48.5, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 30.4,
+      "left": -34.2,
+      "rotate": 180,
+      "attrs": { "color": "white" }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -141.6,
+      "left": -7.8,
+      "attrs": { "volume": "0.25" }
+    }
+  ],
+  "connections": [
+    [ "led1:A", "nano:13", "violet", [ "v0" ] ],
+    [ "led1:C", "nano:GND.1", "black", [ "v0", "h114.8" ] ],
+    [ "bz1:1", "nano:GND.2", "black", [ "v9.6", "h67.2" ] ],
+    [ "bz1:2", "nano:12", "orange", [ "v0", "h-48.4" ] ]
+  ],
+  "dependencies": {}
+}
