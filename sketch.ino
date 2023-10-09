@@ -17,10 +17,10 @@ const int drumPattern[] = {
   1, 0, 1, 0, 1, 1, 0, 0
 };
 const size_t drumPatternLength = arrayLength(drumPattern);
-const int estimatedTime = 35;
-const float noteDelayMs = 60000.0 / float(BPM * 2) - estimatedTime;
-#define drumHit tone(SPK_PIN, 125, estimatedTime)
-#define skipHit delay(estimatedTime)
+const int estimatedTimeMs = 35;
+const float noteDelayMs = 60000.0 / float(BPM * 2) - estimatedTimeMs;
+#define drumHit tone(SPK_PIN, 125, estimatedTimeMs)
+#define skipHit delay(estimatedTimeMs)
 
 /*
    Arduino functions
